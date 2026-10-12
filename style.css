@@ -1,0 +1,92 @@
+/* Tùy chỉnh màu sắc chủ đạo và hiệu ứng Material Design */
+:root {
+    --primary-color: #512da8;     /* Deep Purple */
+    --accent-color: #ffb300;      /* Amber Accent */
+    --text-color: #333333;
+}
+
+body {
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    background-color: #fafafa;
+}
+
+/* Hero Section */
+.hero-section {
+    min-height: 85vh;
+    background: linear-gradient(135deg, rgba(81, 45, 168, 0.95), rgba(49, 27, 146, 0.95)), 
+                url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1500&q=80') center center / cover no-repeat;
+    padding-top: 5rem;
+}
+
+/* Thẻ chỉ số nổi trên Hero */
+.counter-container {
+    margin-top: -45px;
+    position: relative;
+    z-index: 10;
+}
+
+.card-stat {
+    border-radius: 10px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card-stat:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Vạch phân cách tiêu đề */
+.divider {
+    width: 60px;
+    height: 3px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+}
+
+/* Vòng tròn Icon */
+.icon-circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-light-primary {
+    background-color: rgba(81, 45, 168, 0.1);
+}
+
+.bg-light-warning {
+    background-color: rgba(255, 179, 0, 0.15);
+}
+
+.bg-light-success {
+    background-color: rgba(0, 200, 81, 0.1);
+}
+
+/* Bước quy trình */
+.step-badge {
+    width: 46px;
+    height: 46px;
+    line-height: 46px;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-weight: 700;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 10px rgba(81, 45, 168, 0.3);
+}
+
+/* Avatar học viên */
+.avatar-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.testimonial-card {
+    border-radius: 12px;
+}
